@@ -6,16 +6,6 @@ app.listen(process.env.PORT || 8080, function(){
     console.log('listening on 8080')
 });
 
-// 안내 화면
-app.get('/mind', function(요청, 응답){
-    응답.send('심리 상태 자가진단');
-});
-
-// 질문지 화면
-app.get('/mind.que', function(요청, 응답){
-    응답.send('심리 상태 자가진단 질문');
-});
-
 // 저장
 app.get('/save', function(요청, 응답){
 
